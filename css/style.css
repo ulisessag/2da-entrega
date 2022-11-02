@@ -1,0 +1,255 @@
+/****************************Body**********************/
+body {
+    background: linear-gradient(180deg, rgba(17,17,105,1) 25%, rgba(0,122,147,1) 82%);
+    background-image: url(../assets/Background-1920.png);
+    background-size: cover;
+    width: 100%;
+    height: 96vh;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+
+/***************************Keyframes**********************/
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+/************************Title Heads********************/
+.aboutHead {
+    color: aliceblue;
+}
+
+.contactHead {
+    color: aliceblue;
+}
+
+.showsHead {
+    color: aliceblue;
+}
+
+.multimediaHead {
+    color: aliceblue;
+}
+
+/***********************************Index******************************************/
+.mainContent {
+    display: flex;
+    height: 81%;
+    align-items: center;
+
+}
+
+.mainMenu {
+    display: flex;
+    color: aliceblue;
+    background-color: rgb(100, 100, 141);
+    border: 3px brown solid;
+    border-radius: 15px;
+    list-style: none;
+    justify-content: center;
+    padding: 0%;
+    align-items: center;
+    width: 600px;
+    height: 38px;
+    margin: 25px auto;
+
+}
+
+
+.mainMenu li {
+    min-width: 75px;
+    margin-inline: 20px;
+    text-align: center;
+
+}
+
+.myNavar {
+    color: aqua;
+}
+
+
+/*******************************SideBAr****************************************/
+.redesFlex {
+    display: flex;
+    color: aliceblue;
+    background-color: rgb(0 0 0 / 28%);;
+    list-style: none;
+    padding: 0%;
+    align-items: center;
+    width: 56px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.redesBox {
+        animation: slide-in 1000ms;
+}
+
+.redesFlex li {
+
+    margin-inline: 20px;
+
+}
+
+footer {
+    color: antiquewhite;
+    text-align: center;
+    width: 100%;
+}
+
+/**************************Multimedia***************************/
+
+.multimediaHead {
+    text-align: center;
+    padding: 20px;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+}
+
+.albumList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 550px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.albumList li {
+    list-style: none;
+    color: aliceblue;
+    }
+
+/************************************Formulario*************************/
+
+.contactHead {
+    text-align: center;
+    padding: 20px;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+}
+
+.parentFormulario {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    color: antiquewhite;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+fieldset {
+    border: none;
+    }
+
+/*****************************About************************************/
+
+.aboutHead {
+    text-align: center;
+    padding: 20px;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+}
+
+.parentText {
+    display: flex;
+    margin: 0 auto;
+    max-width: 580px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+/*******************************show**********************************/
+.tableContainer {
+    margin: 0 auto;
+    max-width: 70%;
+
+}
+
+.showsHead {
+    text-align: center;
+    padding: 20px;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+}
+
+.table.table-transparent{
+    background-color: rgba(0,0,0,.4);
+    }
+
+.table td {
+    text-align: center;
+
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+
+.celda {
+    width: 33%;
+    text-align: center;
+
+}
+
+/*******************Bootstrap******************************************/
+
+/***********************Navbar**********************/
+
+.myNavbar .container-fluid {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,.4);
+    
+}
+.logoMave {
+    display: none;
+}
+.navbar-expand-lg {
+    background: linear-gradient(180deg, rgb(31, 30, 30) 25%, rgba(0,122,147,0) 82%);
+        }
+.navbar {
+    --darkreader-text--bs-navbar-color: rgb(255, 186, 255);
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase
+        }
+        .myNavbar .navbar-toggler .navbar-toggler-icon{
+            background-image: url('../assets/menu-burger.png');
+            }
+        /***********************media Queries****************/
+        @media (min-width: 576px) { 
+            .myNavbar .navbar-brand{
+                display: none;
+            }
+            .myNavbar .container-fluid {
+              width: auto;
+              margin: auto;
+              background-color: transparent;
+            }
+            .logoMave {
+                display: inline-block;
+          }
+                  
+        }
+
+        
