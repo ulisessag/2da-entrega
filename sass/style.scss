@@ -116,9 +116,6 @@ footer {
 }
 
 .hovernk {
-  display: flex;
-  align-items: center;
-  padding: 0;
   background-image: url(/assets/NeosKosmos-Front.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -126,12 +123,10 @@ footer {
   height: 100%;
   top: 0;
   transition: all 400ms;
+  background-size: contain;
 }
 
 .hoversuper {
-  display: flex;
-  align-items: center;
-  padding: 0;
   background-image: url(/assets/Supernatural-Front.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -139,12 +134,10 @@ footer {
   height: 100%;
   top: 0;
   transition: all 400ms;
+  background-size: contain;
 }
 
 .hoversw {
-  display: flex;
-  align-items: center;
-  padding: 0;
   background-image: url(/assets/SunsetWaves-Front.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -152,10 +145,15 @@ footer {
   height: 100%;
   top: 0;
   transition: all 400ms;
+  background-size: contain;
 }
 
-.hovernk:hover, .hoversuper:hover, .hoversw:hover {
+.multimediaItem:hover .hovernk, .multimediaItem:hover .hoversw, .multimediaItem:hover .hoversuper {
   width: 100%;
+}
+
+img, svg {
+  vertical-align: 0;
 }
 
 /************************************Contacto*************************/
@@ -243,6 +241,10 @@ fieldset {
   text-align: center;
 }
 
+.table > :not(caption) > * > * {
+  color: gray;
+}
+
 /*******************Bootstrap******************************************/
 
 /***********************Navbar**********************/
@@ -277,6 +279,11 @@ fieldset {
 .nav-item {
   padding-top: 12px;
 }
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  color: gray;
+}
+
 
 /***********************media Queries para escritorio****************/
 @media (min-width: 576px) {
