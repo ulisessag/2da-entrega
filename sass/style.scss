@@ -69,10 +69,14 @@ body {
   background-color: rgb(0 0 0 / 28%);
   list-style: none;
   padding: 0%;
+  margin: 0;
   align-items: center;
-  width: 56px;
   flex-direction: column;
   justify-content: flex-end;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 177px;
+
 }
 
 .redesBox {
@@ -253,6 +257,9 @@ fieldset {
   width: 100%;
   margin: 0;
   text-align: center;
+  background-color: rgba(6, 19, 31, 0.8);
+  border-bottom: solid;
+  border-bottom-color: rgb(176, 132, 0);
 }
 
 .logoMave {
@@ -270,6 +277,7 @@ fieldset {
   text-transform: uppercase;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .myNavbar .navbar-toggler .navbar-toggler-icon {
@@ -290,16 +298,18 @@ fieldset {
   .myNavbar {
     .navbar-brand {
       display: none;
-    }
-
+      }
+      
     .container-fluid {
       width: auto;
       margin: auto;
       background-color: transparent;
+      border-bottom: none;
     }
   }
 
   .logoMave {
     display: inline-block;
   }
+
 }
